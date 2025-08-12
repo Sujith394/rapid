@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Train Search Application</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🚂 Train Search</h1>
+        <p class="subtitle">Find the best train routes across India</p>
+      </div>
+      
+      <div class="controls">
+        <label>
+          <span>From Station</span>
+          <select id="from" placeholder="Select departure station"></select>
+        </label>
+        <label>
+          <span>To Station</span>
+          <select id="to" placeholder="Select arrival station"></select>
+        </label>
+        <label>
+          <span>Sort By</span>
+          <select id="sort">
+            <option value="price">Price (Lowest First)</option>
+            <option value="duration">Duration (Fastest First)</option>
+          </select>
+        </label>
+        <button id="search" class="search-btn">🔍 Search Trains</button>
+      </div>
+      
+      <div id="results"></div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
+
+

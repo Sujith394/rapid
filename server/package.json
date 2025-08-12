@@ -1,0 +1,20 @@
+{
+  "name": "train-search-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seed:example": "node seed.js example",
+    "seed:random": "node seed.js random --trains 1000 --stations 200"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}
+
+
